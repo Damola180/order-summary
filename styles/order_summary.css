@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+}
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+
+  opacity: 0.5;
+}
+
+img {
+  width: inherit;
+}
+
+button {
+  display: block;
+}
+p {
+  line-height: 1;
+}
+
+#container {
+  position: relative;
+  background-color: #fff;
+  max-width: 350px;
+  margin: 2rem auto 3rem auto;
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 2em;
+  box-shadow: 0 0.7px 3px 0px hsl(223, 47%, 23%);
+}
+
+.illustration {
+  width: 350px;
+  height: 150px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#container h1 {
+  font-size: 1.35rem;
+  font-weight: bold;
+  line-height: 2;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+#container .text {
+  width: 70%;
+  margin: auto auto 2.5rem auto;
+  opacity: 0.5;
+  line-height: 1.5;
+  font-size: 0.7rem;
+}
+
+.price {
+  background-color: hsl(225, 100%, 98%);
+
+  display: flex;
+  padding: 0.5rem;
+  margin: auto;
+  max-width: 70%;
+  border-radius: 4px;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+.music-sig {
+  height: 35px;
+  margin-top: 0.4rem;
+}
+.annual {
+  font-size: small;
+  display: inline;
+  margin-right: 4.2rem;
+  margin-left: 4px;
+}
+.annual p {
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+#container h4 {
+  line-height: 2;
+}
+#container a {
+  margin: auto;
+  font-size: 0.7em;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+/* button */
+.btn {
+  width: 80%;
+  margin: auto auto 0.5em;
+  padding: 0.5em;
+  font-size: 0.75rem;
+  height: 3em;
+  cursor: pointer;
+  font-weight: 700;
+}
+.proceed {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  border: 0px solid;
+  border-radius: 9.5px;
+  box-shadow: 0 0.7px 3px 0px hsl(223, 47%, 23%);
+}
+.cancel {
+  border: 0px solid;
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+/* attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 375px) {
+  body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("/images/pattern-background-mobile.svg");
+    opacity: 0.5;
+  }
+}
